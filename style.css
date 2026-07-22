@@ -275,7 +275,7 @@ header::before {
     padding: 2rem 1rem;
   }
 
-  .nav__links li:not(:nth-child(4)) a::before {
+  .nav__links li:not(:nth-child(3)) a::before {
     position: absolute;
     content: "";
     top: -100%;
