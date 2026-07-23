@@ -362,3 +362,282 @@ header::before {
     padding-block: 6rem;
   }
 }
+
+/* =========================================================
+   ADDED BELOW: styles for Projects, Hire Me, and Get Started pages
+   Nothing above this line was changed.
+   ========================================================= */
+
+/* ===== PROJECTS PAGE ===== */
+.projects {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+.projects .section__container {
+  padding-block: 0;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.projects__intro {
+  text-align: center;
+  opacity: 0.8;
+  color: var(--white);
+  margin-bottom: 2.5rem;
+}
+
+.projects__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project__card {
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.project__card:hover {
+  transform: translateY(-5px);
+}
+
+.project__card h3 {
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.project__card p {
+  color: var(--white);
+  opacity: 0.8;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.project__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project__tags span {
+  padding: 0.3rem 0.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  border-radius: 2rem;
+  font-size: 0.75rem;
+}
+
+@media (width > 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== HIRE ME / GET STARTED (CONTACT) PAGES ===== */
+.contact {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+.contact__container h2 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contact__container > p {
+  color: var(--white);
+  opacity: 0.85;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.contact__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.contact__info h3 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.contact__info ul {
+  margin-bottom: 1.5rem;
+}
+
+.contact__info li {
+  color: var(--white);
+  opacity: 0.85;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact__info a {
+  color: var(--white);
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: var(--white);
+  border-radius: 0.5rem;
+  font-family: inherit;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact__form button {
+  align-self: flex-start;
+}
+
+@media (width > 768px) {
+  .contact__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project__status {
+  display: inline-block;
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-bottom: 0.75rem !important;
+}
+
+.project__card .btn {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+/* ===== ABOUT PAGE ===== */
+.about {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+.about .section__container {
+  padding-block: 0;
+}
+
+.about__top {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about__image img {
+  max-width: 220px;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-inline: auto;
+}
+
+.about__intro h2 {
+  font-size: 2rem;
+  color: var(--white) !important;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.about__intro p {
+  color: var(--white) !important;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about__sections {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about__section {
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.about__section h3 {
+  color: var(--white) !important;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.about__section p {
+  color: var(--white) !important;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about__edu-item h4 {
+  color: var(--white) !important;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.about__edu-item p {
+  color: var(--white) !important;
+  opacity: 0.75;
+  font-size: 0.85rem;
+}
+
+.about__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.about__tags span {
+  padding: 0.35rem 0.9rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white) !important;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+}
+
+@media (width > 768px) {
+  .about__top {
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+  }
+
+  .about__sections {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== RED & BOLD KEY POINTS ===== */
+.highlight {
+  color: var(--primary-color);
+  font-weight: 700;
+}

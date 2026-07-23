@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projects | Nazah</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html">Nazah<span>.</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#">Get Started</a></li>
+      </ul>
+      <img src="assets/bg.png" alt="background" class="nav__bg-1" />
+    </nav>
+
+    <section class="projects">
+      <div class="section__container">
+        <h2>My Projects</h2>
+        <p class="projects__intro">A few things I've built — mostly data pipelines, with front-end work now joining the mix.</p>
+        <div class="projects__grid" id="projects-container">
+          <!-- Cards are generated automatically from projects-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <script src="projects-data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
